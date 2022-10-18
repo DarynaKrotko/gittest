@@ -1,0 +1,38 @@
+.father{
+    background: silver;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mother{
+    display: inline-block;
+}
+.widgets{
+    width: 600px;
+    height: 200px;
+    background: #2e6ab8;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.threeblocks{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.smallblocks{
+    width: 30%;
+    height: 200px;
+    background: #1e4679;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
