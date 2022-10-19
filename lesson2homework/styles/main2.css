@@ -1,0 +1,45 @@
+.father{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 210px;
+    height: 300px;
+    background: white;
+    box-shadow: 1px 1px 5px silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+i{
+    font-size: 25px;
+    color: darkgray;
+}
+h1{
+    font-size: 25px;
+    font-weight: normal;
+    font-family: Arial;
+    color: chocolate;
+}
+p{
+    color: darkgray;
+    font-size: 18px;
+    font-family: Calibri;
+    margin-top: 0px;
+}
+button{
+    width: 120px;
+    height: 40px;
+    background: #5ec3b6;
+    color: white;
+    font-size: 20px;
+    border: 0px;
+}
