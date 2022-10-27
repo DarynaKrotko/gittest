@@ -1,0 +1,14 @@
+.father{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.child{
+    width: 200px;
+    height: 200px;
+    background: #5ec3b6;
+    border: 1px solid black;
+}
+.child:hover{
+    background: #142d40;
+}
