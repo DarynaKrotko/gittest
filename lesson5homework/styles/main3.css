@@ -4,6 +4,9 @@
     background: white;
     margin: 20px;
 }
+p{
+    margin: 0;
+}
 .top{
     width: 100%;
     height: 10%;
@@ -16,7 +19,6 @@
     height: 75%;
     margin-bottom: 10px;
     display: flex;
-    position: relative;
     column-gap: 10px;
 }
 .blockbottom{
@@ -32,6 +34,9 @@ div[class^="block"]{
     font-size: 25px;
     color: white;
 }
+p::first-line{
+    color: coral;
+}
 .blocklogo{
     width: 15%;
     height: 100%;
@@ -42,12 +47,26 @@ div[class^="block"]{
     height: 100%;
     background: #686868;
 }
-.blockfirst{
+.first{
     width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.block3{
+    width: 100%;
     height: 70%;
     background: #686868;
     margin-bottom: 10px;
 }
+.container_89{
+     width: 100%;
+     height: 30%;
+     display: flex;
+     flex-direction: column;
+     row-gap: 10px;
+ }
 .second{
     width: 85%;
     height: 100%;
@@ -55,24 +74,14 @@ div[class^="block"]{
     flex-direction: column;
     row-gap: 10px;
 }
-.third{
-    width: 15%;
-    height: 30%;
-    position: absolute;
-    top: 465px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    box-sizing: border-box;
-    padding-top: 10px;
-}
-.second45{
+
+.blocks_45{
     width: 100%;
     height: 30%;
     display: flex;
     column-gap: 10px;
 }
-.second67{
+.blocks_67{
     width: 100%;
     height: 70%;
     display: flex;
@@ -89,9 +98,21 @@ div[class^="block"]{
     height: 100%;
     background: #686868;
 }
-.block89{
+.block8, .block9{
     width: 100%;
     height: 50%;
+    background: #686868;
+}
+.hide_89{
+    width: 100%;
+    height: 5%;
+    display: none;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+.block8_hide, .block9_hide{
+    width: 50%;
+    height: 100%;
     background: #686868;
 }
 
