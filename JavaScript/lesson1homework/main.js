@@ -35,3 +35,8 @@ let b = '100';
 console.log('100', typeof '100');
 let c = true;
 console.log( c, typeof c);
+
+const NAME = prompt('Як мене звати?', 'Дарина');
+const MIDDLENAME = prompt('Як мене по-батькові?', 'Олегівна');
+const AGE = prompt('Скільки мені років?', '21');
+console.log(NAME, MIDDLENAME, AGE);
