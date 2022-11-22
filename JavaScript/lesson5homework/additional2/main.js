@@ -90,19 +90,38 @@
 //   EXAMPLE:
 //   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
 //   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
-let foo= [9,8,0,4];//0) ==> [ 8, 9, 0, 4 ]
-function swap(I,...arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if(i===I){
-
+let arr = [9, 8, 0, 4];//0) ==> [ 8, 9, 0, 4 ]
+function swap(array, num) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i + 1]) {
+            let temp = array[num];
+            array[num] = array[num + 1];
+            array[num + 1] = temp;
         }
     }
-    console.log(foo);
+    return array;
 }
-swap(0,foo);
+
+console.log(swap(arr, 0));
+
 // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
 // Двожина масиву від 2 до 100
 // EXAMPLE:
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
+// const arr = [1,0,6,0,3];
+// function foo (array){
+//     const newArray = [];
+//     let counter = 0;
+//     let index = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         array[i] ? newArray[index++] = array[i] : counter++;
+//     }
+//     const num = newArray.length;
+//     for (let i = num; i < num+counter; i++) {
+//         newArray[i]= 0;
+//     }
+//     return newArray;
+// }
+// console.log(foo(arr));
