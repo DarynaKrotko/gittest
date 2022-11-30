@@ -40,6 +40,11 @@
 // let numbers = [10,8,-7,55,987,-1011,0,1050,0];
 // let str = numbers.map(num => num+' ');
 // console.log(str);
+//можна ще було зробити це завдання так
+//let str = numbers.map(num => num.toString());
+//або
+//let str = numbers.map(num => String(num));
+
 
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 // let nums = [11,21,3];
@@ -139,7 +144,7 @@ let deck = [
 // // - всі трефи від 9 та більше
 // let clubs = deck.filter(card => card.cardSuit === 'Clubs' && (card.value >9 || card.value.length > 2));
 // console.log(clubs);
-//
+//можна було ще через typeof value  === 'string';
 // {
 //     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
 //         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
@@ -150,16 +155,19 @@ let deck = [
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
 let reduce = deck.reduce((accumulator,card)=>{
+    // if(card.cardSuit === 'Spade'){
+    //     accumulator.spades.push(card.cardSuit+card.value);
+    // }
     if(card.cardSuit === 'Spade'){
-        accumulator.spades.push(card.cardSuit+card.value);
+        accumulator.spades.push(card);
     }
-    if(card.cardSuit === 'Diamonds'){
+    else if(card.cardSuit === 'Diamonds'){
         accumulator.diamonds.push(card.cardSuit+card.value);
     }
-    if(card.cardSuit === 'Hearts'){
+    else if(card.cardSuit === 'Hearts'){
         accumulator.hearts.push(card.cardSuit+card.value);
     }
-    if(card.cardSuit === 'Clubs'){
+    else if(card.cardSuit === 'Clubs'){
         accumulator.clubs.push(card.cardSuit+card.value);
     }
     return accumulator;
