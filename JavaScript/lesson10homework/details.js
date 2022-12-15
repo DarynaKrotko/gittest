@@ -32,16 +32,4 @@ fetch(`http://jsonplaceholder.typicode.com/users/${id}`)
         }
     }
 })
-// let div = document.createElement('div');
-// for (const userKey of user) {
-//     if(typeof userKey === 'object'){
-//         let ul = document.createElement('ul');
-//         for (const userKeyElement of userKey) {
-//             let li = document.createElement('li');
-//             li.innerText = `${userKeyElement} `;
-//             ul.appendChild(li);
-//         }
-//         div.append(ul);
-//     }
-// }
-// document.body.appendChild(div);
+
