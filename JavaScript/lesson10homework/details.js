@@ -9,12 +9,14 @@ fetch(`http://jsonplaceholder.typicode.com/users/${id}`)
         for (const smallKey in user[key]) {
             if(typeof user[key][smallKey] === 'object'){
                 for (const geo in user[key][smallKey]) {
+
                     let divchik = document.createElement('div');
                     divchik.innerHTML = `${geo}: ${user[key][smallKey][geo]}`
                     document.body.appendChild(divchik);
                 }
             }
             else{
+
                 let div1 = document.createElement('div');
                 div1.innerHTML =
                     `${smallKey}: ${user[key][smallKey]}`
@@ -25,6 +27,7 @@ fetch(`http://jsonplaceholder.typicode.com/users/${id}`)
 
     }
         else{
+
             let div2 = document.createElement('div');
             div2.innerHTML = `${key}: ${user[key]} `;
             document.body.appendChild(div2);
